@@ -6,7 +6,9 @@
 	.sidebar {
 		display: flex;
 		flex-direction: column;
-		width: 7 * $input-height;
+		align-items: center;
+		width: 9 * $input-height;
+		@include background-color("background-sidebar");
 	}
 
 	.editor {
@@ -33,6 +35,7 @@
 	@media (min-width: $screen-tablet + 1px) {
 		justify-content: center;
 		padding: $spacing-rel-large;
+		padding-left: 0;
 
 		.sidebar,
 		.editor {
@@ -41,7 +44,6 @@
 
 		.editor {
 			max-width: $editor-max-width;
-			margin-left: $spacing-rel-large;
 		}
 	}
 

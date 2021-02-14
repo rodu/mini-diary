@@ -1,0 +1,16 @@
+.toolbar {
+	@include background-color("background-main-toolbar");
+
+	justify-content: stretch;
+	height: 100%;
+	width: 60px;
+	// border-top-right-radius: $border-radius-input;
+	// border-bottom-right-radius: $border-radius-input;
+}
+
+@media (max-width: $screen-tablet) {
+	.toolbar {
+		width: 100%;
+		height: 60px;
+	}
+}
